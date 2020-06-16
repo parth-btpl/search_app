@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Users</h1>
-
+<%= form_tag users_path, method: :get do %>
+  <%= text_field_tag :q, nil, placeholder: "Search user by name...", size: 50 %>
+<% end %>
+<br>
 <table>
   <thead>
     <tr>
